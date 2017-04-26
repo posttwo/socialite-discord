@@ -18,7 +18,7 @@ class Provider extends AbstractProvider implements ProviderInterface
      */
     protected $scopes = [
         'identify',
-        'email',
+        'guilds.join',
     ];
 
     /**
