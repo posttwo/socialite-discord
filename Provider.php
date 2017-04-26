@@ -68,7 +68,6 @@ class Provider extends AbstractProvider implements ProviderInterface
             'id' => $user['id'],
             'nickname' => sprintf('%s#%d', $user['username'], $user['discriminator']),
             'name' => $user['username'],
-            'email' => $user['email'],
             'avatar' => (is_null($user['avatar'])) ? null : sprintf('https://cdn.discordapp.com/avatars/%s/%s.jpg', $user['id'], $user['avatar']),
         ]);
     }
